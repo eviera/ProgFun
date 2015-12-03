@@ -21,7 +21,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/scalatest_2.11-2.2.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/scalatest_2.10-2.2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
