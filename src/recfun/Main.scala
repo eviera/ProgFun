@@ -21,11 +21,20 @@ object Main {
 
   /**
    * Exercise 2
+   */
+  def balance(chars: List[Char]): Boolean = {
+    def bal(chars: List[Char], acum: Int): Boolean = {
+      if (acum < 0) false
+      else if (chars.isEmpty) acum == 0
+      else if (chars.head == '(') bal(chars.tail, acum + 1)
+      else if (chars.head == ')') bal(chars.tail, acum - 1)
+      else bal(chars.tail, acum)
+    }
+    bal(chars, 0)
+  }
 
-  def balance(chars: List[Char]): Boolean = false
-  */
   /**
    * Exercise 3
-
-  def countChange(money: Int, coins: List[Int]): Int = 0*/
+   */
+  def countChange(money: Int, coins: List[Int]): Int = 0
 }
